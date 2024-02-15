@@ -21,6 +21,6 @@ void loop()
     delay(3000);//ค้าง3วิ
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print(" MIDV-099 ");//ข้อความค้าง
+    lcd.print(" MIDV-099 ");//ใส่ตามบรรทัดที่10
     }
 }
