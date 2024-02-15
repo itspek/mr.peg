@@ -14,7 +14,6 @@ void loop()
 {
   if(digitalRead(A2) ==0)
     {
-    digitalWrite(A5, 0);
     lcd.clear();
     delay(300);
     lcd.setCursor(0, 0);
