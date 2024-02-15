@@ -7,7 +7,7 @@ void setup()
   pinMode(A3, OUTPUT);//เมื่อกดสวิทไฟเข้าA3ข้อความออก
   lcd.begin(16,2);
   lcd.backlight();
-  lcd.print(" TEXT ");//ข้อความค้าง
+  lcd.print(" Shoko takahashi ");//ข้อความค้าง
   lcd.setCursor(0, 0);
 }
 void loop()
@@ -17,10 +17,10 @@ void loop()
     lcd.clear();
     delay(300);
     lcd.setCursor(0, 0);
-    lcd.print(" NAME ");//ชื่อตัวเอง
+    lcd.print(" MIDE-975 ");//ชื่อตัวเอง
     delay(3000);//ค้าง3วิ
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print(" TEXT ");//ข้อความค้าง
+    lcd.print(" MIDV-099 ");//ข้อความค้าง
     }
 }
