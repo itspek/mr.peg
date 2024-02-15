@@ -1,11 +1,10 @@
-int sw = A2;
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 void setup()
 {
-  pinMode(sw, INPUT_PULLUP);
-  pinMode(6, OUTPUT);
+  pinMode(A2, INPUT_PULLUP);//ใช้A2เปนไฟเลี้ยงให้สวิท
+  pinMode(A3, OUTPUT);//เมื่อกดสวิทไฟเข้าA3ข้อความออก
   lcd.begin(16,2);
   lcd.backlight();
   lcd.print(" TEXT ");//ข้อความค้าง
@@ -13,13 +12,13 @@ void setup()
 }
 void loop()
 {
-  if(digitalRead(sw) ==0)
+  if(digitalRead(A2) ==0)
     {
-    digitalWrite(A5, LOW);
+    digitalWrite(A5, 0);
     lcd.clear();
     delay(300);
     lcd.setCursor(0, 0);
-    lcd.print("  NAME ");//ชื่อตัวเอง
+    lcd.print(" NAME ");//ชื่อตัวเอง
     delay(3000);//ค้าง3วิ
     lcd.clear();
     lcd.setCursor(0, 0);
